@@ -11,6 +11,7 @@
 // console.log(frase.toUpperCase()); // to UPPERcase = deixar tudo maiusculo
 
 //Exemplo array - List
+/*
 var lista = ["Maçã", "Pêra", "Laranja"];
 lista.push("uva"); //adicionar um item a mais a lista
 lista.pop(); //retira o ultimo elemento da lista
@@ -37,15 +38,18 @@ var frutas = [{ nome: "maça", cor: "vermelha" }, { nome: "uva", cor: "roxa" }]
 console.log(frutas);
 console.log(frutas[0].nome); //se não determinar a possição ficará undefined
 alert(frutas[1].cor);
+*/
+
 
 //Exemplo Condicional 
-var idade = prompt("Qual a sua idade?");
+/* var idade = prompt("Qual a sua idade?");
 //var idade = 18;
 if (idade >= 18) {
     alert("Maior de idade");
 } else {
     alert("menor de idade");
-};
+}; 
+*/
 
 
 /*Exemplo Laços de repetição 1 
@@ -67,7 +71,38 @@ for(count=0; count<=5; count++){
 
 // Exemplo Date
 
-var d = new Date();
+/* var d = new Date();
 alert(d.getMonth()+1); //no mês sempre tem que colocar +1 pois ele inicia a contagem do 0
 alert(d.getHours());
 alert(d.getMinutes());
+*/
+
+//JavaScript - Desenvolva páginas web - função
+
+/* function soma(n1, n2) {
+    return n1 + n2;
+}
+
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome)
+}
+alert(soma(5, 10));
+alert(setReplace("Vai Japão ", " Japão ", " Brasil "));*/
+var validar = 0; 
+
+function validaIdade(idade) {
+   // var validar = 18;  
+   // Posso ou não declarar a variavel dentro da função, porém as variaveis de dentro da função(local), são vistas somente dentro da função.
+   // Quando se é declada fora da função(global) e não houver nenhuma variavel declarada dentro, segue a varivel de fora. 
+    console.log(validar);
+    if (idade >= 18) {
+        validar = true;
+    } else {
+        validar = false
+    }
+    return validar;
+}
+var idade = prompt("Qual a sua idade?")
+console.log(validaIdade(idade));
+console.log(validar);
+
