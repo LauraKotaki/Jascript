@@ -11,7 +11,7 @@
 // console.log(frase.toUpperCase()); // to UPPERcase = deixar tudo maiusculo
 
 //Exemplo array - List
-var lista = ["Maçã", "Pêra","Laranja"];
+var lista = ["Maçã", "Pêra", "Laranja"];
 lista.push("uva"); //adicionar um item a mais a lista
 lista.pop(); //retira o ultimo elemento da lista
 console.log(lista[1]);
@@ -28,12 +28,46 @@ console.log(lista.toString()[0]); //traz a letra M pois é a primeira letra da s
 console.log(lista.join(" -- ")); //traz a separação ao inves de virgula, o traço (ou o que determinar dentro do join)
 
 
-var fruta = {nome: "maça", cor: "vermelha"}
+var fruta = { nome: "maça", cor: "vermelha" }
 console.log(fruta);
 console.log(fruta.nome);
 alert(fruta.cor);
 
-var frutas = [{nome: "maça", cor: "vermelha"}, {nome:"uva" , cor:"roxa"}]
+var frutas = [{ nome: "maça", cor: "vermelha" }, { nome: "uva", cor: "roxa" }]
 console.log(frutas);
 console.log(frutas[0].nome); //se não determinar a possição ficará undefined
 alert(frutas[1].cor);
+
+//Exemplo Condicional 
+var idade = prompt("Qual a sua idade?");
+//var idade = 18;
+if (idade >= 18) {
+    alert("Maior de idade");
+} else {
+    alert("menor de idade");
+};
+
+
+/*Exemplo Laços de repetição 1 
+
+var count = 0;
+while (count <= 5) {
+    console.log(count);
+    //alert(count);
+    count = count + 1; // pode substituir por: count++
+};
+*/
+
+/* Exemplo Laços de repetição 2
+var count;
+for(count=0; count<=5; count++){
+    alert(count);
+}
+*/
+
+// Exemplo Date
+
+var d = new Date();
+alert(d.getMonth()+1); //no mês sempre tem que colocar +1 pois ele inicia a contagem do 0
+alert(d.getHours());
+alert(d.getMinutes());
