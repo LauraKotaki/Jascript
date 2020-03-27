@@ -52,7 +52,9 @@ if (idade >= 18) {
 */
 
 
-/*Exemplo Laços de repetição 1 
+/*
+
+Exemplo Laços de repetição 1 
 
 var count = 0;
 while (count <= 5) {
@@ -60,18 +62,27 @@ while (count <= 5) {
     //alert(count);
     count = count + 1; // pode substituir por: count++
 };
+
 */
 
-/* Exemplo Laços de repetição 2
+
+/* 
+
+Exemplo Laços de repetição 2
 var count;
 for(count=0; count<=5; count++){
     alert(count);
 }
+
+
 */
 
 // Exemplo Date
 
-/* var d = new Date();
+/*
+
+
+var d = new Date();
 alert(d.getMonth()+1); //no mês sempre tem que colocar +1 pois ele inicia a contagem do 0
 alert(d.getHours());
 alert(d.getMinutes());
@@ -87,7 +98,14 @@ function setReplace(frase, nome, novo_nome){
     return frase.replace(nome, novo_nome)
 }
 alert(soma(5, 10));
-alert(setReplace("Vai Japão ", " Japão ", " Brasil "));*/
+alert(setReplace("Vai Japão ", " Japão ", " Brasil "));
+
+
+*/
+
+
+/*
+
 var validar = 0; 
 
 function validaIdade(idade) {
@@ -106,3 +124,42 @@ var idade = prompt("Qual a sua idade?")
 console.log(validaIdade(idade));
 console.log(validar);
 
+
+*/
+
+/* function msgbotao(){
+    alert("Obrigada por clicar");
+}
+*/
+
+function msgbotao(){
+    document.getElementById("agree").innerHTML = "<b> Obrigada por clicar </b>"; //inserir txt
+    
+    //console.log(document.getElementById("agradecimento");
+}
+
+function redirecionar(){
+    window.open("http://www.google.com.br/");
+    window.location.href = "http://www.google.com/"; //abre na mesma janela
+}
+
+function trocar(elemento){
+    //document.getElementById("mousemove").innerHTML = "Oi, tudo bem?";
+    //alert ("trocar texto");
+    elemento.innerHTML = "Oi, tudo bem?"
+}
+
+function voltar(elemento){
+   // document.getElementById("mousemove").innerHTML = "Passe o mouse aqui"; 
+   elemento.innerHTML = "Passe o mouse aqui"
+
+   //pode ser usado o document ou elemento - o elemento você declara "ele mesmo"
+}
+
+function loud(){
+alert("Pagina carregada"); //quando carregado o body, ele da o alerta
+}
+
+function change(elemento){
+    console.log(elemento.value)
+}
